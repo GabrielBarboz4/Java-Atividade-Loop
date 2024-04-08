@@ -10,13 +10,13 @@ public class Atividade2 {
         final double converterEuro = 4.27;
         final double valorVeiculo = 61307;
         int quantidadadeDeParcelas = 0;
-        double conversãoReal = valorVeiculo * converterEuro;
+        double conversaoReal = valorVeiculo * converterEuro;
 
 
-        double valorAvista = (conversãoReal - (conversãoReal*0.08));
-        double valor4vezes = (conversãoReal - (conversãoReal*0.05));
-        double valor8vezes = (conversãoReal - (conversãoReal*0.02));
-        double valorMaisParcelas = (conversãoReal + (conversãoReal * quantidadadeDeParcelas));
+        double valorAvista = (conversaoReal - (conversaoReal*0.08));
+        double valor4vezes = (conversaoReal - (conversaoReal*0.05));
+        double valor8vezes = (conversaoReal - (conversaoReal*0.02));
+        double valorMaisParcelas = (conversaoReal + (conversaoReal * quantidadadeDeParcelas));
 
         System.out.println("""
                 Olá Antônio Luiz, bem vindo ao sistema integrado da NEWS CARS ZIP
@@ -38,7 +38,7 @@ public class Atividade2 {
             switch (valorDigitado){
                 case 1:
                     System.out.println("Ótimo você deseja pagar a vista");
-                    System.out.println("O valor do carro convertido para Real fica igual a: R$ " + decimal.format(conversãoReal));
+                    System.out.println("O valor do carro convertido para Real fica igual a: R$ " + decimal.format(conversaoReal));
                     System.out.println("Como sua compra é a vista, recebe 8 % de desconto, sendo igual à: R$ " + decimal.format(valorAvista));
                     System.out.println("""
                             Deseja processeguir com a compra?

@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Atividade4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+
         boolean avaliarOutro = true;
         int totalFuncionariosAvaliados = 0;
 
