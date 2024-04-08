@@ -18,5 +18,6 @@ public class Atividade1 {
         }
         System.out.println("O valor máximo digitado foi: " + valorMaximo);
         System.out.println("O valor mínimo digitado foi: " + valorMinimo);
+        input.close();
     }
 }

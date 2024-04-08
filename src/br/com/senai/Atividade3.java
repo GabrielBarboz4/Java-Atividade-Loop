@@ -10,7 +10,7 @@ public class Atividade3 {
         int quantidade = 0;
         double valorMaquina = 0;
 
-        int enteredValue = 0;
+        int enteredValue;
 
         do {
             System.out.println("""

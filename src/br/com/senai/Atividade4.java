@@ -67,5 +67,6 @@ public class Atividade4 {
         }
 
         System.out.println("Total de funcionários avaliados: " + totalFuncionariosAvaliados);
+        input.close();
     }
 }

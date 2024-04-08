@@ -9,15 +9,14 @@ public class Atividade2ponto0 {
         DecimalFormat decimal = new DecimalFormat("0.00");
         final double converterEuro = 4.27;
         final double valorVeiculo = 61307;
-        int quantidadadeDeParcelas = 0;
         double conversaoReal = valorVeiculo * converterEuro;
 
         double valorAvista = (conversaoReal - (conversaoReal*0.08));
         double valor4vezes = (conversaoReal - (conversaoReal*0.05));
         double valor8vezes = (conversaoReal - (conversaoReal*0.02));
 
-        int valorDigitado = 0;
-        int escolha = 0;
+        int valorDigitado;
+        int escolha;
         do {
             System.out.println("""
                 Olá Antônio Luiz, bem vindo ao sistema integrado da NEWS CARS ZIP
@@ -31,7 +30,7 @@ public class Atividade2ponto0 {
                 3 - Parcelado em 8 vezes com 2 % de desconto;
                 4 - Parcelado em 12 vezes;
                 5 - Parcelado em mais vezes, sendo 12 sem juros e as demais recebem 2 % de juros;
-                6 - Desistir da compra!                
+                6 - Desistir da compra!;
                 """);
 
             valorDigitado = input.nextInt();
@@ -155,5 +154,6 @@ public class Atividade2ponto0 {
                     System.out.println("Valor inválido, por favor digite um valor entre 1 e 6");
             }
         } while (valorDigitado != 6);
+        input.close();
     }
 }
