@@ -15,6 +15,7 @@ public class Atividade3 {
         do {
             System.out.println("""
                 \nSistema de cadastro de maquinas
+                
                 1 - Cadastrar uma nova máquina
                 2 - Retirar produto de estoque
                 3 - Consultar estoque
@@ -28,10 +29,21 @@ public class Atividade3 {
                     System.out.println("CADASTRO DE NOVAS MAQUINAS");
                     System.out.println("Digite o Nome da máquina que você deseja adicionar:");
                     nomeMaquina = input.nextLine();
+
                     System.out.println("Digite a quantidade em estoque:");
                     quantidade = input.nextInt();
+                    while (quantidade <= 0) {
+                        System.out.println("Digite um valor válido para quantidade");
+                        quantidade = input.nextInt();
+                    }
+
                     System.out.println("Digite o valor em reais da máquina");
                     valorMaquina = input.nextDouble();
+                    while (valorMaquina <= 0) {
+                        System.out.println("Digite um valor válido para preço");
+                        valorMaquina = input.nextDouble();
+                    }
+
                     System.out.println("Máquina cadastrada com sucesso!");
                     break;
                 case 2:
@@ -41,10 +53,12 @@ public class Atividade3 {
                     else {
                         System.out.println("Digite a quantidade de itens que você deseja dar baixa no estoque");
                         int baixaNoSistema = input.nextInt();
+
                         while (baixaNoSistema > quantidade || quantidade <= 0) {
                             System.out.println("Valor inválido, digite novamente");
                             baixaNoSistema = input.nextInt();
                         }
+
                         quantidade = quantidade - baixaNoSistema;
                         System.out.println("Estoque atualizado: " + nomeMaquina + " estoque " + quantidade);
                     }

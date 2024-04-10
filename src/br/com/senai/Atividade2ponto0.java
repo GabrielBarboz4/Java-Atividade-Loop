@@ -47,7 +47,7 @@ public class Atividade2ponto0 {
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         System.out.println("PARABÉNSSS VOCE ADQUIRIU UMA RX-9 Á VISTA");
-                        System.out.println("Sistema finalizado!");
+                        System.out.println("\nSistema finalizado!");
                         System.exit(0);
                     } else if (escolha == 2) {
                         break;
@@ -68,7 +68,7 @@ public class Atividade2ponto0 {
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         System.out.println("Parabéns, você comprou um Mazda RX-9 em 4 vezes");
-                        System.out.println("Sistema finalizado!");
+                        System.out.println("\nSistema finalizado!");
                         System.exit(0);
                     } else if (escolha == 2) {
                         break;
@@ -89,7 +89,7 @@ public class Atividade2ponto0 {
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         System.out.println("Parabéns, você comprou um Mazda RX-9 em 8 vezes");
-                        System.out.println("Sistema finalizado!");
+                        System.out.println("\nSistema finalizado!");
                         System.exit(0);
                     } else if (escolha == 2) {
                         break;
@@ -110,7 +110,7 @@ public class Atividade2ponto0 {
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         System.out.println("Parabéns, você comprou um Mazda RX-9 em 12 parcelas");
-                        System.out.println("Sistema finalizado!");
+                        System.out.println("\nSistema finalizado!");
                         System.exit(0);
                     } else if (escolha == 2) {
                         break;
@@ -139,7 +139,7 @@ public class Atividade2ponto0 {
                     escolha = input.nextInt();
                     if (escolha == 1) {
                         System.out.println("É isso ai, você comprou um Mazda RX-9 em " + parcelamento + " parcelas");
-                        System.out.println("Sistema finalizado!");
+                        System.out.println("\nSistema finalizado!");
                         System.exit(0);
                     } else if (escolha == 2) {
                         break;

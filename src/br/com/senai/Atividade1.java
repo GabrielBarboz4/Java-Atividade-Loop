@@ -8,6 +8,8 @@ public class Atividade1 {
         Integer valorMaximo = null;
         Integer valorMinimo = null;
 
+        System.out.println("Digite 10 valores aleatórios");
+
         int valorRegistrado;
         for (int i = 1; i <= 10 ; i++) {
             System.out.println(i + "= ");
@@ -16,6 +18,7 @@ public class Atividade1 {
             if (valorMaximo == null || valorRegistrado > valorMaximo) valorMaximo = valorRegistrado;
             if (valorMinimo == null || valorRegistrado < valorMinimo) valorMinimo = valorRegistrado;
         }
+
         System.out.println("O valor máximo digitado foi: " + valorMaximo);
         System.out.println("O valor mínimo digitado foi: " + valorMinimo);
         input.close();
