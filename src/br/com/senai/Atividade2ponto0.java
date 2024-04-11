@@ -7,13 +7,14 @@ public class Atividade2ponto0 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         DecimalFormat decimal = new DecimalFormat("0.00");
+
         final double converterEuro = 4.27;
         final double valorVeiculo = 61307;
         double conversaoReal = valorVeiculo * converterEuro;
 
-        double valorAvista = (conversaoReal - (conversaoReal*0.08));
-        double valor4vezes = (conversaoReal - (conversaoReal*0.05));
-        double valor8vezes = (conversaoReal - (conversaoReal*0.02));
+        double valorAvista;
+        double valor4vezes;
+        double valor8vezes;
 
         int valorDigitado;
         int escolha;
@@ -36,6 +37,7 @@ public class Atividade2ponto0 {
             valorDigitado = input.nextInt();
             switch (valorDigitado){
                 case 1:
+                    valorAvista = (conversaoReal - (conversaoReal*0.08));
                     System.out.println("Ótimo, você deseja pagar a vista.");
                     System.out.println("O valor do carro convertido para Real fica igual a: R$ " + decimal.format(conversaoReal));
                     System.out.println("Como sua compra é à vista, você recebe 8% de desconto, sendo igual a: R$ " + decimal.format(valorAvista));
@@ -56,6 +58,7 @@ public class Atividade2ponto0 {
                         break;
                     }
                 case 2:
+                    valor4vezes = (conversaoReal - (conversaoReal*0.05));
                     System.out.println("Ótimo, você deseja pagar em 4 parcelas");
                     System.out.println("O valor do carro convertido para Real fica igual a: R$ " + decimal.format(conversaoReal));
                     System.out.println("O valor final parcelado em 4 parcelas sera de: R$ " + decimal.format((valor4vezes)));
@@ -77,10 +80,11 @@ public class Atividade2ponto0 {
                         break;
                     }
                 case 3:
+                    valor8vezes = (conversaoReal - (conversaoReal*0.02));
                     System.out.println("Ótimo, você deseja pagar em 8 parcelas");
                     System.out.println("O valor do carro convertido para Real fica igual a: R$ " + decimal.format(conversaoReal));
                     System.out.println("O valor final parcelado em 8 parcelas sera de: R$ " + decimal.format((valor8vezes)));
-                    System.out.println("Cada parcela saira por: R$ " + decimal.format((valor4vezes/8)));
+                    System.out.println("Cada parcela saira por: R$ " + decimal.format((valor8vezes/8)));
                     System.out.println("""
                             Deseja prosseguir com a compra?
                             1 - Finalizar compra;
@@ -128,7 +132,7 @@ public class Atividade2ponto0 {
                         parcelamento = input.nextInt();
                     }
                     double valorParcelado= (conversaoReal + ((parcelamento - 12) * (conversaoReal*0.02)));
-                    System.out.println("O valor final do veículo será: R$ " + decimal.format(conversaoReal + ((parcelamento - 12) * (conversaoReal*0.02))));
+                    System.out.println("O valor final do veículo será: R$ " + decimal.format(valorParcelado));
                     System.out.println("Você deseja parcelar em " + parcelamento + " vezes?");
                     System.out.println("Devo informar que cada parcela saiu pelo valor de: " + decimal.format(valorParcelado/parcelamento));
                     System.out.println("""

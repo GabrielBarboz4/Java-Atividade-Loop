@@ -19,7 +19,7 @@ public class Atividade4 {
             int quantidadeNotas = 0;
 
             while (true) {
-                System.out.println("Informe a nota do colaborador (ou digite -1 para finalizar):");
+                System.out.println("Informe as notas do colaborador, para finalizar a digitação digite -1 para finalizar:");
                 int nota = input.nextInt();
                 input.nextLine();
 
@@ -56,16 +56,14 @@ public class Atividade4 {
             }
 
             System.out.println("Situação: " + situacao + " - Colaborador: " + nome);
-
             totalFuncionariosAvaliados++;
 
             System.out.println("Deseja avaliar outro funcionário? (s/n)");
             String resposta = input.nextLine();
-            if (!resposta.equalsIgnoreCase("s")) {
+                if (resposta.equalsIgnoreCase("n")) {
                 avaliarOutro = false;
             }
         }
-
         System.out.println("Total de funcionários avaliados: " + totalFuncionariosAvaliados);
         input.close();
     }
